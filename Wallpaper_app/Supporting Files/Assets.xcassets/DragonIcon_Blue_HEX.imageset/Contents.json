@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "DragonIcon_Blue_HEX.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "DragonIcon_Blue_HEX-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "DragonIcon_Blue_HEX-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

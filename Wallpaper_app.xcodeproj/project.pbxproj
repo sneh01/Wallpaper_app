@@ -56,15 +56,23 @@
 		3F9442322436E4B300FF6C26 /* Wallpaper_app */ = {
 			isa = PBXGroup;
 			children = (
-				3F9442332436E4B300FF6C26 /* AppDelegate.swift */,
-				3F9442352436E4B300FF6C26 /* SceneDelegate.swift */,
 				3F9442372436E4B300FF6C26 /* ViewController.swift */,
 				3F9442392436E4B300FF6C26 /* Main.storyboard */,
-				3F94423C2436E4B400FF6C26 /* Assets.xcassets */,
-				3F94423E2436E4B400FF6C26 /* LaunchScreen.storyboard */,
+				3F9442472436E4CD00FF6C26 /* Supporting Files */,
 				3F9442412436E4B400FF6C26 /* Info.plist */,
 			);
 			path = Wallpaper_app;
+			sourceTree = "<group>";
+		};
+		3F9442472436E4CD00FF6C26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F9442332436E4B300FF6C26 /* AppDelegate.swift */,
+				3F9442352436E4B300FF6C26 /* SceneDelegate.swift */,
+				3F94423C2436E4B400FF6C26 /* Assets.xcassets */,
+				3F94423E2436E4B400FF6C26 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
