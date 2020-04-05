@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var firstWallpaper: UIImageView!
+    
+    
+    
+    
+    
+    
+    
 }
 

@@ -13,10 +13,11 @@
 		3F94423B2436E4B300FF6C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9442392436E4B300FF6C26 /* Main.storyboard */; };
 		3F94423D2436E4B400FF6C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F94423C2436E4B400FF6C26 /* Assets.xcassets */; };
 		3F9442402436E4B400FF6C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94423E2436E4B400FF6C26 /* LaunchScreen.storyboard */; };
+		3F94424B2436E72E00FF6C26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F94424A2436E72E00FF6C26 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F9442302436E4B300FF6C26 /* Wallpaper_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallpaper_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9442302436E4B300FF6C26 /* Wallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9442332436E4B300FF6C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9442352436E4B300FF6C26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F9442372436E4B300FF6C26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		3F94423C2436E4B400FF6C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F94423F2436E4B400FF6C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9442412436E4B400FF6C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F94424A2436E72E00FF6C26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		3F9442312436E4B300FF6C26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F9442302436E4B300FF6C26 /* Wallpaper_app.app */,
+				3F9442302436E4B300FF6C26 /* Wallpaper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +71,7 @@
 			children = (
 				3F9442332436E4B300FF6C26 /* AppDelegate.swift */,
 				3F9442352436E4B300FF6C26 /* SceneDelegate.swift */,
+				3F94424A2436E72E00FF6C26 /* Default-568h@2x.png */,
 				3F94423C2436E4B400FF6C26 /* Assets.xcassets */,
 				3F94423E2436E4B400FF6C26 /* LaunchScreen.storyboard */,
 			);
@@ -78,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F94422F2436E4B300FF6C26 /* Wallpaper_app */ = {
+		3F94422F2436E4B300FF6C26 /* Wallpaper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F9442442436E4B400FF6C26 /* Build configuration list for PBXNativeTarget "Wallpaper_app" */;
+			buildConfigurationList = 3F9442442436E4B400FF6C26 /* Build configuration list for PBXNativeTarget "Wallpaper" */;
 			buildPhases = (
 				3F94422C2436E4B300FF6C26 /* Sources */,
 				3F94422D2436E4B300FF6C26 /* Frameworks */,
@@ -90,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = Wallpaper_app;
+			name = Wallpaper;
 			productName = Wallpaper_app;
-			productReference = 3F9442302436E4B300FF6C26 /* Wallpaper_app.app */;
+			productReference = 3F9442302436E4B300FF6C26 /* Wallpaper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3F94422B2436E4B300FF6C26 /* Build configuration list for PBXProject "Wallpaper_app" */;
+			buildConfigurationList = 3F94422B2436E4B300FF6C26 /* Build configuration list for PBXProject "Wallpaper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F94422F2436E4B300FF6C26 /* Wallpaper_app */,
+				3F94422F2436E4B300FF6C26 /* Wallpaper */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9442402436E4B400FF6C26 /* LaunchScreen.storyboard in Resources */,
+				3F94424B2436E72E00FF6C26 /* Default-568h@2x.png in Resources */,
 				3F94423D2436E4B400FF6C26 /* Assets.xcassets in Resources */,
 				3F94423B2436E4B300FF6C26 /* Main.storyboard in Resources */,
 			);
@@ -299,8 +303,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.snehpatel.Wallpaper-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snehpatel.Wallpaper;
+				PRODUCT_NAME = Wallpaper;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,8 +321,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.snehpatel.Wallpaper-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snehpatel.Wallpaper;
+				PRODUCT_NAME = Wallpaper;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F94422B2436E4B300FF6C26 /* Build configuration list for PBXProject "Wallpaper_app" */ = {
+		3F94422B2436E4B300FF6C26 /* Build configuration list for PBXProject "Wallpaper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F9442422436E4B400FF6C26 /* Debug */,
@@ -336,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F9442442436E4B400FF6C26 /* Build configuration list for PBXNativeTarget "Wallpaper_app" */ = {
+		3F9442442436E4B400FF6C26 /* Build configuration list for PBXNativeTarget "Wallpaper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F9442452436E4B400FF6C26 /* Debug */,
