@@ -10,18 +10,40 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    var wallpaperUrl: URL? {
+        didSet{
+            firstWallpaper.image = nil
+            if view.window != nil {
+                fetchImage()
+            }
+        }
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if firstWallpaper.image == nil{
+            fetchImage()
+        }
+    }
+    
     @IBOutlet weak var firstWallpaper: UIImageView!
     
     
+    private func fetchImage() {
+        if let url = wallpaperUrl {
+            let urlContents = try? Data(contentsOf: url)
+            if let imageData = urlContents {
+                firstWallpaper.image = UIImage(data: imageData)
+            }
+        
+        }
+    }
     
-    
-    
-    
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if wallpaperUrl == nil {
+            wallpaperUrl = ImageURLs.temporaryImage
+        }
+    }
 }
 
