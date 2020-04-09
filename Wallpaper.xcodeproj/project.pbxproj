@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		3F9442342436E4B300FF6C26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9442332436E4B300FF6C26 /* AppDelegate.swift */; };
 		3F9442362436E4B300FF6C26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9442352436E4B300FF6C26 /* SceneDelegate.swift */; };
-		3F9442382436E4B300FF6C26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9442372436E4B300FF6C26 /* ViewController.swift */; };
+		3F9442382436E4B300FF6C26 /* WallpaperTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9442372436E4B300FF6C26 /* WallpaperTabViewController.swift */; };
 		3F94423B2436E4B300FF6C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9442392436E4B300FF6C26 /* Main.storyboard */; };
 		3F94423D2436E4B400FF6C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F94423C2436E4B400FF6C26 /* Assets.xcassets */; };
 		3F9442402436E4B400FF6C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94423E2436E4B400FF6C26 /* LaunchScreen.storyboard */; };
 		3F94424B2436E72E00FF6C26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F94424A2436E72E00FF6C26 /* Default-568h@2x.png */; };
+		3FA05C23243EB14900CFEB06 /* imageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA05C22243EB14900CFEB06 /* imageSaver.swift */; };
+		3FA05C25243ED36E00CFEB06 /* WallpaperImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA05C24243ED36E00CFEB06 /* WallpaperImage.swift */; };
 		3FE956FB243D853F006141D4 /* ImageURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE956FA243D853F006141D4 /* ImageURLs.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +23,14 @@
 		3F9442302436E4B300FF6C26 /* Wallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9442332436E4B300FF6C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9442352436E4B300FF6C26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F9442372436E4B300FF6C26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F9442372436E4B300FF6C26 /* WallpaperTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperTabViewController.swift; sourceTree = "<group>"; };
 		3F94423A2436E4B300FF6C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F94423C2436E4B400FF6C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F94423F2436E4B400FF6C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9442412436E4B400FF6C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F94424A2436E72E00FF6C26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FA05C22243EB14900CFEB06 /* imageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSaver.swift; sourceTree = "<group>"; };
+		3FA05C24243ED36E00CFEB06 /* WallpaperImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperImage.swift; sourceTree = "<group>"; };
 		3FE956FA243D853F006141D4 /* ImageURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +64,10 @@
 		3F9442322436E4B300FF6C26 /* Wallpaper_app */ = {
 			isa = PBXGroup;
 			children = (
-				3F9442372436E4B300FF6C26 /* ViewController.swift */,
+				3F9442372436E4B300FF6C26 /* WallpaperTabViewController.swift */,
+				3FA05C24243ED36E00CFEB06 /* WallpaperImage.swift */,
 				3F9442392436E4B300FF6C26 /* Main.storyboard */,
+				3FA05C22243EB14900CFEB06 /* imageSaver.swift */,
 				3FE956FA243D853F006141D4 /* ImageURLs.swift */,
 				3F9442472436E4CD00FF6C26 /* Supporting Files */,
 				3F9442412436E4B400FF6C26 /* Info.plist */,
@@ -153,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9442382436E4B300FF6C26 /* ViewController.swift in Sources */,
+				3F9442382436E4B300FF6C26 /* WallpaperTabViewController.swift in Sources */,
 				3F9442342436E4B300FF6C26 /* AppDelegate.swift in Sources */,
+				3FA05C25243ED36E00CFEB06 /* WallpaperImage.swift in Sources */,
 				3F9442362436E4B300FF6C26 /* SceneDelegate.swift in Sources */,
+				3FA05C23243EB14900CFEB06 /* imageSaver.swift in Sources */,
 				3FE956FB243D853F006141D4 /* ImageURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

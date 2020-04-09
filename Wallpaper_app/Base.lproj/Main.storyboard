@@ -10,7 +10,7 @@
         <!--iPhone-->
         <scene sceneID="82h-Jx-fn6">
             <objects>
-                <viewController id="tvM-X6-xKv" customClass="ViewController" customModule="Wallpaper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tvM-X6-xKv" customClass="WallpaperTabViewController" customModule="Wallpaper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bj3-hK-6hR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,15 +27,27 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-6y-uct">
                                 <rect key="frame" x="0.0" y="142.5" width="414" height="670.5"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty8-k0-AZ6">
+                                <rect key="frame" x="375" y="104" width="19" height="23.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="square.and.arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="tvM-X6-xKv" eventType="touchUpInside" id="USX-Q9-vNv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nEj-6y-uct" firstAttribute="leading" secondItem="iVI-kS-zkT" secondAttribute="leading" id="Fdc-cm-01H"/>
+                            <constraint firstItem="nEj-6y-uct" firstAttribute="top" relation="lessThanOrEqual" secondItem="Ty8-k0-AZ6" secondAttribute="bottom" constant="15" id="ByL-p0-xOD"/>
+                            <constraint firstItem="Ty8-k0-AZ6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="42R-S8-lsI" secondAttribute="trailing" constant="100" id="Exh-NL-J4y"/>
+                            <constraint firstItem="nEj-6y-uct" firstAttribute="leading" secondItem="bj3-hK-6hR" secondAttribute="leading" id="Fdc-cm-01H"/>
                             <constraint firstItem="iVI-kS-zkT" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="42R-S8-lsI" secondAttribute="trailing" constant="120" id="Lq0-WI-cnG"/>
                             <constraint firstItem="42R-S8-lsI" firstAttribute="leading" secondItem="iVI-kS-zkT" secondAttribute="leading" constant="20" id="Q31-pE-uL2"/>
                             <constraint firstItem="42R-S8-lsI" firstAttribute="top" secondItem="iVI-kS-zkT" secondAttribute="top" constant="50" id="aUO-3x-BJV"/>
+                            <constraint firstItem="Ty8-k0-AZ6" firstAttribute="top" secondItem="iVI-kS-zkT" secondAttribute="top" constant="60" id="g38-vN-76R"/>
                             <constraint firstItem="nEj-6y-uct" firstAttribute="bottom" secondItem="iVI-kS-zkT" secondAttribute="bottom" id="goC-Kb-yuw"/>
-                            <constraint firstItem="nEj-6y-uct" firstAttribute="trailing" secondItem="iVI-kS-zkT" secondAttribute="trailing" id="nYJ-KE-QWO"/>
+                            <constraint firstItem="iVI-kS-zkT" firstAttribute="trailing" secondItem="Ty8-k0-AZ6" secondAttribute="trailing" constant="20" id="mx8-dk-CXl"/>
+                            <constraint firstItem="nEj-6y-uct" firstAttribute="trailing" secondItem="bj3-hK-6hR" secondAttribute="trailing" id="nYJ-KE-QWO"/>
                             <constraint firstItem="nEj-6y-uct" firstAttribute="top" secondItem="42R-S8-lsI" secondAttribute="bottom" constant="10" id="xYv-FF-jDg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iVI-kS-zkT"/>
@@ -260,5 +272,6 @@
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="slowmo" catalog="system" width="128" height="122"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
     </resources>
 </document>
