@@ -26,16 +26,25 @@ class WallpaperTabViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
+    
+    
     @IBOutlet weak var firstWallpaper: UIImageView!
     
     //gets the image from the url
     private func fetchImage() {
         if let url = wallpaperUrl {
-            let urlContents = try? Data(contentsOf: url)
-            if let imageData = urlContents {
-                firstWallpaper.image = UIImage(data: imageData)
-            }
-            
+            spinner.startAnimating()
+            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+                let urlContents = try? Data(contentsOf: url)
+                DispatchQueue.main.async {
+                    if let imageData = urlContents, url == self?.wallpaperUrl {
+                        self?.firstWallpaper.image = UIImage(data: imageData)
+                        self?.spinner.stopAnimating() 
+                    }   
+                }
+            }       
         }
     }
     //sets a temporary image while the main thing loads
@@ -51,21 +60,17 @@ class WallpaperTabViewController: UIViewController {
         let imageSaver = ImageSaver()
         if let inputImage = firstWallpaper.image {
             imageSaver.writeToPhotoAlbum(image: inputImage)
-//
-//            if imageSaver.imageSaved {
-//                let alertController = UIAlertController(title: "Saved!", message: "Your Wallpaper is saved to Photos.", preferredStyle: UIAlertController.Style.alert)
-//
-//                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-//                present(alertController, animated: true, completion: nil)
-//            }
-            
+            //
+            //            if imageSaver.imageSaved {
+            //                let alertController = UIAlertController(title: "Saved!", message: "Your Wallpaper is saved to Photos.", preferredStyle: UIAlertController.Style.alert)
+            //
+            //                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            //                present(alertController, animated: true, completion: nil)
+            //            }
         }
         
         
         
     }
-    
-    
-    
 }
 

@@ -35,14 +35,20 @@
                                     <action selector="savePhoto:" destination="tvM-X6-xKv" eventType="touchUpInside" id="USX-Q9-vNv"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="NUD-yh-ZVC">
+                                <rect key="frame" x="188.5" y="410" width="37" height="37"/>
+                                <color key="color" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nEj-6y-uct" firstAttribute="top" relation="lessThanOrEqual" secondItem="Ty8-k0-AZ6" secondAttribute="bottom" constant="15" id="ByL-p0-xOD"/>
                             <constraint firstItem="Ty8-k0-AZ6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="42R-S8-lsI" secondAttribute="trailing" constant="100" id="Exh-NL-J4y"/>
                             <constraint firstItem="nEj-6y-uct" firstAttribute="leading" secondItem="bj3-hK-6hR" secondAttribute="leading" id="Fdc-cm-01H"/>
+                            <constraint firstItem="NUD-yh-ZVC" firstAttribute="centerY" secondItem="iVI-kS-zkT" secondAttribute="centerY" id="FvJ-ev-cGe"/>
                             <constraint firstItem="iVI-kS-zkT" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="42R-S8-lsI" secondAttribute="trailing" constant="120" id="Lq0-WI-cnG"/>
                             <constraint firstItem="42R-S8-lsI" firstAttribute="leading" secondItem="iVI-kS-zkT" secondAttribute="leading" constant="20" id="Q31-pE-uL2"/>
+                            <constraint firstItem="NUD-yh-ZVC" firstAttribute="centerX" secondItem="iVI-kS-zkT" secondAttribute="centerX" id="XP4-Ye-npc"/>
                             <constraint firstItem="42R-S8-lsI" firstAttribute="top" secondItem="iVI-kS-zkT" secondAttribute="top" constant="50" id="aUO-3x-BJV"/>
                             <constraint firstItem="Ty8-k0-AZ6" firstAttribute="top" secondItem="iVI-kS-zkT" secondAttribute="top" constant="60" id="g38-vN-76R"/>
                             <constraint firstItem="nEj-6y-uct" firstAttribute="bottom" secondItem="iVI-kS-zkT" secondAttribute="bottom" id="goC-Kb-yuw"/>
@@ -55,6 +61,7 @@
                     <tabBarItem key="tabBarItem" title="iPhone" image="doc.plaintext" catalog="system" id="nuA-gV-5Ys"/>
                     <connections>
                         <outlet property="firstWallpaper" destination="nEj-6y-uct" id="DiC-QC-Tcr"/>
+                        <outlet property="spinner" destination="NUD-yh-ZVC" id="d4M-5P-82L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLh-X0-Mdm" sceneMemberID="firstResponder"/>
