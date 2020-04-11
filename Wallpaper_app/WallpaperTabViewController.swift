@@ -28,7 +28,7 @@ class WallpaperTabViewController: UIViewController {
     
     @IBOutlet weak var firstWallpaper: UIImageView!
     
-    
+    //gets the image from the url
     private func fetchImage() {
         if let url = wallpaperUrl {
             let urlContents = try? Data(contentsOf: url)
@@ -38,7 +38,7 @@ class WallpaperTabViewController: UIViewController {
             
         }
     }
-    
+    //sets a temporary image while the main thing loads
     override func viewDidLoad() {
         super.viewDidLoad()
         if wallpaperUrl == nil {
@@ -46,6 +46,7 @@ class WallpaperTabViewController: UIViewController {
         }
     }
     
+    //saves the image 
     @IBAction func savePhoto(_ sender: Any) {
         let imageSaver = ImageSaver()
         if let inputImage = firstWallpaper.image {
