@@ -60,16 +60,15 @@ class WallpaperTabViewController: UIViewController {
         let imageSaver = ImageSaver()
         if let inputImage = firstWallpaper.image {
             imageSaver.writeToPhotoAlbum(image: inputImage)
-            //
-            //            if imageSaver.imageSaved {
-            //                let alertController = UIAlertController(title: "Saved!", message: "Your Wallpaper is saved to Photos.", preferredStyle: UIAlertController.Style.alert)
-            //
-            //                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            //                present(alertController, animated: true, completion: nil)
-            //            }
+           let alertController = UIAlertController(title: "Saved!", message: "Your Wallpaper is saved to Photos.", preferredStyle: UIAlertController.Style.alert)
+
+           alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+           present(alertController, animated: true, completion: nil)
+
+
         }
         
-        
+
         
     }
 }
